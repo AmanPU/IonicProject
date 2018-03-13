@@ -1,0 +1,34 @@
+<ion-header>
+    <ion-navbar>
+        <ion-title>
+            Ionic Project
+        </ion-title>
+    </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-navbar *navbar>
+        <ion-title>
+            Home
+        </ion-title>
+    </ion-navbar>
+
+    <ion-content class="home">
+        <div id="content">
+            <div >
+                <h1>Welcome</h1></div>
+            <button ion-button class="camera" icon-left (click)="openCamera()">
+
+                Open Camera
+            </button>
+
+            <br>
+            <button ion-button class="browser" icon-left onclick="window.open('https://www.example.com/', '_system', 'location=yes'); return false;">
+
+                Open Browser
+            </button>
+        </div>
+
+    </ion-content>
+
+</ion-content>
